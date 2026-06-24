@@ -6,6 +6,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "exactOptionalPropertyTypes": false,
+    "jsx": "react-jsx",
     "paths": {
       "@/*": ["./*"]
     }

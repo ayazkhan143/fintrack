@@ -13,10 +13,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#0F172A"
     },
+    "sdkVersion": "56.0.0",
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.ayazkhan143.fintrack",
       "buildNumber": "1",
+      "deploymentTarget": "16.4",
       "infoPlist": {
         "NSFaceIDUsageDescription": "FinTrack uses Face ID to protect your financial data.",
         "NSCameraUsageDescription": "FinTrack uses your camera to scan receipts.",
@@ -30,6 +32,8 @@
       },
       "package": "com.ayazkhan143.fintrack",
       "versionCode": 1,
+      "compileSdkVersion": 36,
+      "targetSdkVersion": 36,
       "permissions": [
         "USE_BIOMETRIC",
         "USE_FINGERPRINT",
