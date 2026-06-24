@@ -80,6 +80,14 @@ export default function HomeScreen() {
             >
               <Ionicons name="add" size={20} color={COLORS.primary} />
             </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.actionBtn, { backgroundColor: colors.surface }]}
+              onPress={() => router.push('/settings')}
+              accessibilityRole="button"
+              accessibilityLabel="Settings"
+            >
+              <Ionicons name="settings-outline" size={20} color={colors.textMuted} />
+            </TouchableOpacity>
           </View>
         </View>
 

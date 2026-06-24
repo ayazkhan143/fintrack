@@ -107,7 +107,7 @@ export default function AnalyticsScreen() {
               showValuesOnTopOfBars={false}
               withInnerLines={false}
               fromZero
-              yAxisLabel={COLORS ? '' : ''}
+              yAxisLabel=""
               yAxisSuffix=""
             />
           </View>

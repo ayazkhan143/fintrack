@@ -72,6 +72,18 @@ function RootLayoutInner() {
           name="modals/add-budget"
           options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
         />
+        <Stack.Screen
+          name="settings"
+          options={{ animation: 'slide_from_right' }}
+        />
+        <Stack.Screen
+          name="modals/add-recurring"
+          options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
+        />
+        <Stack.Screen
+          name="recurring"
+          options={{ animation: 'slide_from_right' }}
+        />
       </Stack>
     </>
   );

@@ -188,6 +188,18 @@ export default function SettingsScreen() {
           />
         </View>
 
+        {/* Tools */}
+        <ThemedText variant="label" style={styles.sectionLabel}>TOOLS</ThemedText>
+        <View style={[styles.section, { backgroundColor: colors.surface }]}>
+          <SettingRow
+            icon="repeat"
+            iconColor={COLORS.primary}
+            label="Recurring Transactions"
+            onPress={() => router.push('/recurring')}
+            accessibilityLabel="Manage recurring transactions"
+          />
+        </View>
+
         {/* About */}
         <ThemedText variant="label" style={styles.sectionLabel}>ABOUT</ThemedText>
         <View style={[styles.section, { backgroundColor: colors.surface }]}>
