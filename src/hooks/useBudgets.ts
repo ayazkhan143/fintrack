@@ -20,10 +20,11 @@ export function useBudgets() {
 }
 
 export function useActiveBudgets() {
-  const now = Date.now();
+  // Floor to start-of-day so the cache key is stable across re-renders within the same day.
+  const today = Math.floor(Date.now() / 86_400_000) * 86_400_000;
   return useQuery({
-    queryKey: [...BUDGETS_KEY, 'active', now],
-    queryFn: () => getActiveBudgets(now),
+    queryKey: [...BUDGETS_KEY, 'active', today],
+    queryFn: () => getActiveBudgets(Date.now()),
     staleTime: 15_000,
   });
 }

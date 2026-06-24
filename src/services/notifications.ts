@@ -73,7 +73,7 @@ export async function scheduleRecurringReminder(
       data: { type: 'recurring', recurringId },
       categoryIdentifier: 'recurring',
     },
-    trigger: { date: trigger },
+    trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: trigger },
   });
 }
 
